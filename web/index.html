@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile WebView Engineering Lab</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="container">
+    <h1>Mobile WebView Engineering Lab</h1>
+
+    <p>
+      Shared Web Playground for Android WebView and iOS WKWebView.
+    </p>
+
+    <section class="card">
+      <h2>Console</h2>
+      <button id="consoleButton">
+        Write Console Log
+      </button>
+    </section>
+
+    <section class="card">
+      <h2>Network</h2>
+      <button id="requestButton">
+        Run API Request
+      </button>
+
+      <pre id="networkResult">No request executed yet.</pre>
+    </section>
+
+    <section class="card">
+      <h2>Storage</h2>
+
+      <button id="saveStorageButton">
+        Save Storage
+      </button>
+
+      <button id="readStorageButton">
+        Read Storage
+      </button>
+
+      <pre id="storageResult">No storage data yet.</pre>
+    </section>
+
+    <section class="card">
+      <h2>JavaScript Error</h2>
+
+      <button id="errorButton">
+        Trigger JavaScript Error
+      </button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

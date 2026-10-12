@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin-top: 16px;
+  border-radius: 12px;
+}
+
+button {
+  display: inline-block;
+  margin: 8px 8px 8px 0;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #eee;
+  padding: 12px;
+  border-radius: 8px;
+}

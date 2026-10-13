@@ -9,6 +9,30 @@ const errorButton = document.getElementById("errorButton");
 const networkResult = document.getElementById("networkResult");
 const storageResult = document.getElementById("storageResult");
 
+const nativeBridgeButton =
+  document.getElementById("nativeBridgeButton");
+
+const nativeBridgeResult =
+  document.getElementById("nativeBridgeResult");
+
+nativeBridgeButton.addEventListener("click", () => {
+  console.log("Sending message to Android native layer");
+
+  if (window.AndroidBridge) {
+    window.AndroidBridge.sendMessage(
+      "Hello from JavaScript"
+    );
+
+    nativeBridgeResult.textContent =
+      "Message sent to Android";
+  } else {
+    console.warn("AndroidBridge is not available");
+
+    nativeBridgeResult.textContent =
+      "Native bridge is not available";
+  }
+});
+
 consoleButton.addEventListener("click", () => {
   console.log("Console test triggered from WebView Lab");
 });

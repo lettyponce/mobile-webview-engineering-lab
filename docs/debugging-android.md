@@ -476,3 +476,19 @@ Chrome DevTools
 
 This flow is useful when automatic WebView discovery through
 `chrome://inspect` is unavailable or unreliable.
+
+### Chrome Incognito limitation
+
+If the WebView target does not appear in `chrome://inspect`,
+make sure Chrome is running in a regular browsing window.
+
+The DevTools target discovery flow may not work correctly from an
+Incognito window.
+
+Use:
+
+```text
+Regular Chrome window
+→ chrome://inspect/#devices
+→ Discover network targets
+→ localhost:9222
